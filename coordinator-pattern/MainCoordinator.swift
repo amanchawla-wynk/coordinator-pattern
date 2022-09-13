@@ -84,7 +84,7 @@ extension MainCoordinator: UINavigationControllerDelegate {
         // We’re still here – it means we’re popping the view controller, so we can check whether it’s a buy view controller
         if let loginViewController = fromViewController as? LoginViewController {
             // We're popping a buy view controller; end its coordinator
-            childDidFinish(loginViewController.coordinator)
+            childDidFinish(loginViewController.viewModel.coordinator)
         }
     }
 }

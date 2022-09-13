@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7618E4E728D06F6700596E8B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618E4E628D06F6700596E8B /* LoginViewModel.swift */; };
+		7618E4EA28D0813B00596E8B /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618E4E928D0813B00596E8B /* UITextFieldExtension.swift */; };
+		7618E4EC28D083EC00596E8B /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618E4EB28D083EC00596E8B /* UIButtonExtension.swift */; };
 		7623B48128CB405400D38AE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7623B48028CB405400D38AE3 /* AppDelegate.swift */; };
 		7623B48328CB405400D38AE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7623B48228CB405400D38AE3 /* SceneDelegate.swift */; };
 		7623B48A28CB405600D38AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7623B48928CB405600D38AE3 /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7618E4E628D06F6700596E8B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		7618E4E928D0813B00596E8B /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		7618E4EB28D083EC00596E8B /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		7623B47D28CB405400D38AE3 /* coordinator-pattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coordinator-pattern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7623B48028CB405400D38AE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7623B48228CB405400D38AE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7618E4E428D06F3D00596E8B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7623B4A228CB44D800D38AE3 /* LoginViewController.swift */,
+				7623B4A428CB45CB00D38AE3 /* ForgotPasswordViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7618E4E528D06F5000596E8B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7618E4E628D06F6700596E8B /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7618E4E828D0811E00596E8B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7618E4E928D0813B00596E8B /* UITextFieldExtension.swift */,
+				7618E4EB28D083EC00596E8B /* UIButtonExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		7623B47428CB405400D38AE3 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +105,7 @@
 				7623B49B28CB41D900D38AE3 /* MainCoordinator.swift */,
 				7623B49828CB415D00D38AE3 /* MainViewController.swift */,
 				7623B49428CB409C00D38AE3 /* Coordinator */,
+				7618E4E828D0811E00596E8B /* Extensions */,
 				7623B49A28CB419E00D38AE3 /* Resources */,
 				7623B48E28CB405600D38AE3 /* Info.plist */,
 			);
@@ -102,8 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				7623B4A028CB448B00D38AE3 /* LoginCoordinator.swift */,
-				7623B4A228CB44D800D38AE3 /* LoginViewController.swift */,
-				7623B4A428CB45CB00D38AE3 /* ForgotPasswordViewController.swift */,
+				7618E4E428D06F3D00596E8B /* Controllers */,
+				7618E4E528D06F5000596E8B /* ViewModels */,
 			);
 			path = "login-module";
 			sourceTree = "<group>";
@@ -188,11 +221,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7623B4A528CB45CB00D38AE3 /* ForgotPasswordViewController.swift in Sources */,
+				7618E4EA28D0813B00596E8B /* UITextFieldExtension.swift in Sources */,
 				7623B4A328CB44D800D38AE3 /* LoginViewController.swift in Sources */,
+				7618E4E728D06F6700596E8B /* LoginViewModel.swift in Sources */,
 				7623B4AA28CB46F600D38AE3 /* ProfileViewController.swift in Sources */,
 				7623B49628CB40AA00D38AE3 /* Coordinator.swift in Sources */,
 				7623B4A128CB448B00D38AE3 /* LoginCoordinator.swift in Sources */,
 				7623B48128CB405400D38AE3 /* AppDelegate.swift in Sources */,
+				7618E4EC28D083EC00596E8B /* UIButtonExtension.swift in Sources */,
 				7623B48328CB405400D38AE3 /* SceneDelegate.swift in Sources */,
 				7623B49C28CB41D900D38AE3 /* MainCoordinator.swift in Sources */,
 				7623B4A828CB46C100D38AE3 /* ProfileCoordinator.swift in Sources */,
@@ -264,7 +300,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -318,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
